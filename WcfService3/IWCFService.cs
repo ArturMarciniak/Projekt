@@ -18,7 +18,7 @@ namespace WcfService3
         void dodajUtwor(int id, string tytul, string wykonawca, float dlugosc, int rok_wydania, int id_albumu);
 
         [OperationContract]
-        void dodajAlbum(int id_albumu, string nazwa_albumu, float dlugosc_albumu, int wydawnictwo, int iterator);
+        void dodajAlbum(int id_albumu, string nazwa_albumu, int wydawnictwo);
 
         [OperationContract]
         void dodajWydawnictwo(int id, string nazwa, int rok_zal, string wlasciciel, string kraj);
@@ -32,5 +32,6 @@ namespace WcfService3
 
         [OperationContract]
         void usunAlbum(int id);
+
     }
 }

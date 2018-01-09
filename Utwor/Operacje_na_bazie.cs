@@ -87,16 +87,16 @@ namespace Utwor
             baza.CloseConnection();
         }
 
+
         public void DodajAlbumDoBazy(Album album)
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO [PprAlbum] (id, nazwa, dlugosc, wydawnictwo) VALUES "
-                + "(@id, @nazwa, @dlugosc, @wydawnicwo)", baza.GetConnection());
+            SqlCommand cmd = new SqlCommand("INSERT INTO [PprAlbum] (id, nazwa, wydawnictwo) VALUES "
+                + "(@id, @nazwa, @wydawnicwo)", baza.GetConnection());
             cmd.Parameters.Add("@id", album.getId_albumu());
             cmd.Parameters.Add("@nazwa", album.getNazwa());
-            cmd.Parameters.Add("@dlugsc", album.getDlugosc());
             cmd.Parameters.Add("@wydawnicwo", album.getWydawnictwo());
 
             cmd.ExecuteNonQuery();
@@ -122,7 +122,7 @@ namespace Utwor
         }
 
 
-        public void UsunUtwor(string id)
+        public void UsunUtwor(int id)
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
@@ -134,7 +134,7 @@ namespace Utwor
 
         }
 
-        public void UsunAlbum(string id)
+        public void UsunAlbum(int id)
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
@@ -146,7 +146,7 @@ namespace Utwor
 
         }
 
-        public void UsunWydawnictwo(string id)
+        public void UsunWydawnictwo(int id)
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
@@ -158,6 +158,74 @@ namespace Utwor
 
         }
 
+        public int getAlbumId()
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.SetUserId("s426187");
+            baza.SetPassword("eRW12aVqq1");
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = baza.GetConnection();
+            cmd.CommandText = "SELECT MAX(ResID) from [PprAlbum]";
+
+            SqlDataReader czytaj = cmd.ExecuteReader();
+            int x = 0;
+            if (czytaj.Read())
+            {
+                x = czytaj.GetInt32(0);
+            }
+            czytaj.Close();
+            baza.CloseConnection();
+
+            return x + 1;
+        }
+
+        public int getUtworId()
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.SetUserId("s426187");
+            baza.SetPassword("eRW12aVqq1");
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = baza.GetConnection();
+            cmd.CommandText = "SELECT MAX(ResID) from [PprUtwor]";
+
+            SqlDataReader czytaj = cmd.ExecuteReader();
+            int x = 0;
+            if (czytaj.Read())
+            {
+                x = czytaj.GetInt32(0);
+            }
+            czytaj.Close();
+            baza.CloseConnection();
+
+            return x + 1;
+        }
+
+        public int getWydawnictwoId()
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.SetUserId("s426187");
+            baza.SetPassword("eRW12aVqq1");
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = baza.GetConnection();
+            cmd.CommandText = "SELECT MAX(ResID) from [PprWydawnictwo]";
+
+            SqlDataReader czytaj = cmd.ExecuteReader();
+            int x = 0;
+            if (czytaj.Read())
+            {
+                x = czytaj.GetInt32(0);
+            }
+            czytaj.Close();
+            baza.CloseConnection();
+
+            return x + 1;
+        }
 
     }
 }
