@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baza_muzyczna", "WcfService3\Baza_muzyczna.csproj", "{7AAC0CEC-D03E-4A0A-B8F6-67811F8B2FB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "Utwor\ClassLibrary.csproj", "{19F55F60-A9BE-4F5C-AC20-2CB65A6E245D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasyBazaMuzuczna", "Utwor\KlasyBazaMuzuczna.csproj", "{19F55F60-A9BE-4F5C-AC20-2CB65A6E245D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{DEB42DAA-FA19-4D1F-8C0D-215947432037}"
 EndProject

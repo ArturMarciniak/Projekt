@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Utwor
 {
-    class Album
+    public class Album
     {
         private int id_albumu;
         private string nazwa_albumu;

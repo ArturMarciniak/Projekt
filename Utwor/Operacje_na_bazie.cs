@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace Utwor
 {
-    class Operacje_na_bazie
+    public class Operacje_na_bazie
     {
         private SqlConnection _connection;
         private string _dbUserId;
@@ -67,5 +67,97 @@ namespace Utwor
                 return;
             }
         }
+
+
+        public void DodajUtworDoBazy(Utwor utwor)
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.ConnectToSQL();
+            SqlCommand cmd = new SqlCommand("INSERT INTO [PprUtwor] (id, tytul, wykonawca, dlugosc,rok, id_albumu) VALUES "
+                + "(@id, @tytul, @wykonawca, @dlugosc, @rok)", baza.GetConnection());
+            cmd.Parameters.Add("@id", utwor.getId());
+            cmd.Parameters.Add("@tytul", utwor.getTytul());
+            cmd.Parameters.Add("@wykonawca", utwor.getWykonawca());
+            cmd.Parameters.Add("@dlugosc", utwor.getDlugosc());
+            cmd.Parameters.Add("@rok", utwor.getRok_wydania());
+            cmd.Parameters.Add("@id_albumu", utwor.getId_albumu());
+
+            cmd.ExecuteNonQuery();
+
+            baza.CloseConnection();
+        }
+
+        public void DodajAlbumDoBazy(Album album)
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO [PprAlbum] (id, nazwa, dlugosc, wydawnictwo) VALUES "
+                + "(@id, @nazwa, @dlugosc, @wydawnicwo)", baza.GetConnection());
+            cmd.Parameters.Add("@id", album.getId_albumu());
+            cmd.Parameters.Add("@nazwa", album.getNazwa());
+            cmd.Parameters.Add("@dlugsc", album.getDlugosc());
+            cmd.Parameters.Add("@wydawnicwo", album.getWydawnictwo());
+
+            cmd.ExecuteNonQuery();
+
+            baza.CloseConnection();
+        }
+
+        public void DodajWydawnictwoDoBazy(Wydawnictwo wydawnictwo)
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO [PprWydawnictwo] (id, nazwa, rok, wlasciciel, kraj) VALUES "
+                + "(@id, @nazwa, @rok, @wlasciciel, @kraj)", baza.GetConnection());
+            cmd.Parameters.Add("@id", wydawnictwo.getId());
+            cmd.Parameters.Add("@nazwa", wydawnictwo.getNazwa());
+            cmd.Parameters.Add("@rok", wydawnictwo.getRok_zal());
+            cmd.Parameters.Add("@wlasciciel", wydawnictwo.getWlasciciel());
+            cmd.Parameters.Add("@kraj", wydawnictwo.getKraj());
+            cmd.ExecuteNonQuery();
+
+            baza.CloseConnection();
+        }
+
+
+        public void UsunUtwor(string id)
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand("DELETE FROM [PprUtwor] WHERE id = " + id, baza.GetConnection());
+
+            cmd.ExecuteNonQuery();
+            baza.CloseConnection();
+
+        }
+
+        public void UsunAlbum(string id)
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand("DELETE FROM [PprAlbum] WHERE id = " + id, baza.GetConnection());
+
+            cmd.ExecuteNonQuery();
+            baza.CloseConnection();
+
+        }
+
+        public void UsunWydawnictwo(string id)
+        {
+            Operacje_na_bazie baza = new Operacje_na_bazie();
+            baza.ConnectToSQL();
+
+            SqlCommand cmd = new SqlCommand("DELETE FROM [PprWydawicwo] WHERE id = " + id, baza.GetConnection());
+
+            cmd.ExecuteNonQuery();
+            baza.CloseConnection();
+
+        }
+
+
     }
 }
