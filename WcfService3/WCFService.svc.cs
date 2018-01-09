@@ -8,16 +8,15 @@ using Utwor;
 
 namespace WcfService3
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "WCFService" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select WCFService.svc or WCFService.svc.cs at the Solution Explorer and start debugging.
+
     public class WCFService : IWCFService
     {
-        public void dodajAlbum(int id_albumu, string nazwa_albumu, int wydawnictwo)
+        public void dodajAlbum(int id_albumu, string nazwa_albumu, float dlugosc_albumu, int wydawnictwo)
         {
         
                 Operacje_na_bazie operacja = new Operacje_na_bazie();
                 int id = operacja.getAlbumId();
-                Album album = new Album(id, nazwa_albumu, wydawnictwo);
+                Album album = new Album(id, nazwa_albumu, dlugosc_albumu, wydawnictwo);
 
                 operacja.DodajAlbumDoBazy(album);
                 operacja.CloseConnection();
@@ -29,10 +28,10 @@ namespace WcfService3
         {
 
                  Operacje_na_bazie operacja = new Operacje_na_bazie();
-                 int id_utworu = operacja.getUtworId();
-                 Utwor utwor = new Utwor(id_utworu, tytul, wykonawca, dlugosc, rok_wydania, id_albumu);
+                 int id_utworu = operacja.getUtworekId();
+                 Utworek utworek = new Utworek(id_utworu, tytul, wykonawca, dlugosc, rok_wydania, id_albumu);
 
-                 operacja.DodajUtworDoBazy(utwor);
+                 operacja.DodajUtworekDoBazy(utworek);
                  operacja.CloseConnection();
         }
         public void dodajWydawnictwo(int id, string nazwa, int rok_zal, string wlasciciel, string kraj)
@@ -57,7 +56,7 @@ namespace WcfService3
         {
                 Operacje_na_bazie baza = new Operacje_na_bazie();
 
-                baza.UsunUtwor(id);
+                baza.UsunUtworek(id);
         }
 
         public void usunWydawnictwo(int id)

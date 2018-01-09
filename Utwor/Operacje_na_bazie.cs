@@ -69,18 +69,18 @@ namespace Utwor
         }
 
 
-        public void DodajUtworDoBazy(Utwor utwor)
+        public void DodajUtworekDoBazy(Utworek Utworek)
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
             SqlCommand cmd = new SqlCommand("INSERT INTO [PprUtwor] (id, tytul, wykonawca, dlugosc,rok, id_albumu) VALUES "
                 + "(@id, @tytul, @wykonawca, @dlugosc, @rok)", baza.GetConnection());
-            cmd.Parameters.Add("@id", utwor.getId());
-            cmd.Parameters.Add("@tytul", utwor.getTytul());
-            cmd.Parameters.Add("@wykonawca", utwor.getWykonawca());
-            cmd.Parameters.Add("@dlugosc", utwor.getDlugosc());
-            cmd.Parameters.Add("@rok", utwor.getRok_wydania());
-            cmd.Parameters.Add("@id_albumu", utwor.getId_albumu());
+            cmd.Parameters.Add("@id", Utworek.getId());
+            cmd.Parameters.Add("@tytul", Utworek.getTytul());
+            cmd.Parameters.Add("@wykonawca", Utworek.getWykonawca());
+            cmd.Parameters.Add("@dlugosc", Utworek.getDlugosc());
+            cmd.Parameters.Add("@rok", Utworek.getRok_wydania());
+            cmd.Parameters.Add("@id_albumu", Utworek.getId_albumu());
 
             cmd.ExecuteNonQuery();
 
@@ -97,6 +97,7 @@ namespace Utwor
                 + "(@id, @nazwa, @wydawnicwo)", baza.GetConnection());
             cmd.Parameters.Add("@id", album.getId_albumu());
             cmd.Parameters.Add("@nazwa", album.getNazwa());
+            cmd.Parameters.Add("@dlugosc", album.getDlugosc());
             cmd.Parameters.Add("@wydawnicwo", album.getWydawnictwo());
 
             cmd.ExecuteNonQuery();
@@ -122,7 +123,7 @@ namespace Utwor
         }
 
 
-        public void UsunUtwor(int id)
+        public void UsunUtworek(int id)
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
@@ -167,7 +168,7 @@ namespace Utwor
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = baza.GetConnection();
-            cmd.CommandText = "SELECT MAX(ResID) from [PprAlbum]";
+            cmd.CommandText = "SELECT MAX(id) from [PprAlbum]";
 
             SqlDataReader czytaj = cmd.ExecuteReader();
             int x = 0;
@@ -181,7 +182,7 @@ namespace Utwor
             return x + 1;
         }
 
-        public int getUtworId()
+        public int getUtworekId()
         {
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.SetUserId("s426187");
@@ -190,7 +191,7 @@ namespace Utwor
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = baza.GetConnection();
-            cmd.CommandText = "SELECT MAX(ResID) from [PprUtwor]";
+            cmd.CommandText = "SELECT MAX(id) from [PprUtwor]";
 
             SqlDataReader czytaj = cmd.ExecuteReader();
             int x = 0;
@@ -213,7 +214,7 @@ namespace Utwor
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = baza.GetConnection();
-            cmd.CommandText = "SELECT MAX(ResID) from [PprWydawnictwo]";
+            cmd.CommandText = "SELECT MAX(id) from [PprWydawnictwo]";
 
             SqlDataReader czytaj = cmd.ExecuteReader();
             int x = 0;
