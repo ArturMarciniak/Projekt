@@ -9,6 +9,7 @@ using Utwor;
 namespace WcfService3
 {
 
+
     public class WCFService : IWCFService
     {
         public void dodajAlbum(int id_albumu, string nazwa_albumu, float dlugosc_albumu, int wydawnictwo)
