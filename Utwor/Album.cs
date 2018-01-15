@@ -10,12 +10,12 @@ namespace Utwor
     {
         private int id_albumu;
         private string nazwa_albumu;
-        private float dlugosc_albumu;
+        private double dlugosc_albumu;
         private int wydawnictwo;
         private Utworek[] tablicaUtworow;
         private int iterator;
 
-        public Album(int id_albumu, string nazwa_albumu, float dlugosc_albumu, int wydawnictwo)
+        public Album(int id_albumu, string nazwa_albumu, double dlugosc_albumu, int wydawnictwo)
         {
             dlugosc_albumu = 0;
             iterator = 0;
@@ -50,7 +50,7 @@ namespace Utwor
             this.nazwa_albumu = nazwa_albumu;
         }
 
-        public void setDlugosc(float dlugosc_albumu)
+        public void setDlugosc(double dlugosc_albumu)
         {
             this.dlugosc_albumu = dlugosc_albumu;
 
@@ -61,7 +61,7 @@ namespace Utwor
             return nazwa_albumu;
         }
 
-        public float getDlugosc()
+        public double getDlugosc()
         {
             return dlugosc_albumu;
         }

@@ -12,7 +12,7 @@ namespace WcfService3
 
     public class WCFService : IWCFService
     {
-        public void dodajAlbum(int id_albumu, string nazwa_albumu, float dlugosc_albumu, int wydawnictwo)
+        public void dodajAlbum(string nazwa_albumu, double dlugosc_albumu, int wydawnictwo)
         {
         
                 Operacje_na_bazie operacja = new Operacje_na_bazie();
@@ -25,7 +25,7 @@ namespace WcfService3
 
         }
 
-        public void dodajUtwor(int id, string tytul, string wykonawca, float dlugosc, int rok_wydania, int id_albumu)
+        public void dodajUtwor(string tytul, string wykonawca, double dlugosc, int rok_wydania, int id_albumu)
         {
 
                  Operacje_na_bazie operacja = new Operacje_na_bazie();
@@ -35,7 +35,7 @@ namespace WcfService3
                  operacja.DodajUtworekDoBazy(utworek);
                  operacja.CloseConnection();
         }
-        public void dodajWydawnictwo(int id, string nazwa, int rok_zal, string wlasciciel, string kraj)
+        public void dodajWydawnictwo(string nazwa, int rok_zal, string wlasciciel, string kraj)
         {
 
                 Operacje_na_bazie operacja = new Operacje_na_bazie();

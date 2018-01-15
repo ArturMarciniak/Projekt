@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasyBazaMuzuczna", "Utwor\KlasyBazaMuzuczna.csproj", "{19F55F60-A9BE-4F5C-AC20-2CB65A6E245D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{DEB42DAA-FA19-4D1F-8C0D-215947432037}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7AAC0CEC-D03E-4A0A-B8F6-67811F8B2FB3} = {7AAC0CEC-D03E-4A0A-B8F6-67811F8B2FB3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1.Tests", "WebApplication1.Tests\WebApplication1.Tests.csproj", "{ADD097BF-FBBC-4C0E-8F9B-3E21EB032742}"
 EndProject
