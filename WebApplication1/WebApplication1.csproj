@@ -210,6 +210,13 @@
       <DependentUpon>Menu_form.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usun_utwor.aspx.cs">
+      <DependentUpon>Usun_utwor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usun_utwor.aspx.designer.cs">
+      <DependentUpon>Usun_utwor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Utwor_form.aspx.cs">
       <DependentUpon>Utwor_form.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -266,6 +273,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Usun_utwor.aspx" />
+    <Content Include="Utwor_form.aspx" />
     <Content Include="Wydawnictwo_form.aspx" />
     <None Include="Connected Services\Polaczenie\WCFService.wsdl" />
     <None Include="Connected Services\Polaczenie\WCFService.xsd">
@@ -280,7 +289,6 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Utwor_form.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

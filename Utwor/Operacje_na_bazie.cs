@@ -74,7 +74,7 @@ namespace Utwor
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
             SqlCommand cmd = new SqlCommand("INSERT INTO [PprUtwor] (id, tytul, wykonawca, dlugosc,rok, id_albumu) VALUES "
-                + "(@id, @tytul, @wykonawca, @dlugosc, @rok)", baza.GetConnection());
+                + "(@id, @tytul, @wykonawca, @dlugosc, @rok, @id_albumu)", baza.GetConnection());
             cmd.Parameters.Add("@id", Utworek.getId());
             cmd.Parameters.Add("@tytul", Utworek.getTytul());
             cmd.Parameters.Add("@wykonawca", Utworek.getWykonawca());
