@@ -1,0 +1,6 @@
+j:\Desktop\Projekt\Utwor\obj\Debug\KlasyBazaMuzuczna.csprojResolveAssemblyReference.cache
+j:\Desktop\Projekt\Utwor\obj\Debug\KlasyBazaMuzuczna.csproj.CoreCompileInputs.cache
+j:\Desktop\Projekt\Utwor\bin\Debug\Utwor.dll
+j:\Desktop\Projekt\Utwor\bin\Debug\Utwor.pdb
+j:\Desktop\Projekt\Utwor\obj\Debug\Utwor.dll
+j:\Desktop\Projekt\Utwor\obj\Debug\Utwor.pdb
