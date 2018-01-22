@@ -7,8 +7,7 @@
 <head runat="server">
     <title></title>
 </head>
-
-<body>
+<body bgcolor="#ffd480">
     <center>
     <form id="form4" runat="server">
         <h1>Wydawnictwa<br /></h1>

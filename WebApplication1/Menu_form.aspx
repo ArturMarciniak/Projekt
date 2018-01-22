@@ -7,12 +7,12 @@
     <title>Muzyczna Baza Danych</title>
 
 </head>
-<body>
+<body bgcolor="#ffd480">
        <center> <h1> Muzyczna baza danych</h1>
     <form id="form2" runat="server">
         <div>
-
-        </div>
+             </div>
+       
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Utwory" /><br /><br />
         <asp:Button ID="Button3" runat="server" Text="Albumy" OnClick="Button3_Click" /><br /><br />
         <asp:Button ID="Button2" runat="server" Text="Wydawnictwa" OnClick="Button2_Click" style="height: 26px" /><br /><br />

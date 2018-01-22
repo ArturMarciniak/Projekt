@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body bgcolor="#ffd480">
     <form id="form1" runat="server">
         <div><center>
             <h1>Usuwanie Utworu:</h1>

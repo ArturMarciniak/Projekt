@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
-<body>
+<body bgcolor="#ffd480">
     <form id="form1" runat="server">
         <div><center>
             <h1>Usuwanie Albumu:</h1>

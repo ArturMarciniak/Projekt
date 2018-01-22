@@ -8,7 +8,7 @@
     <title></title>
 </head>
 
-<body>
+<body bgcolor="#ffd480">
     <center>
     <form id="form3" runat="server">
         <h1>Albumy<br /></h1>
