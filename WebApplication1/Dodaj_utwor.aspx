@@ -20,12 +20,15 @@
             Długość:                        <asp:TextBox ID="Dlugosc" runat="server"></asp:TextBox><br /><br />
             Rok wydania:                    <asp:TextBox ID="Rok" runat="server"></asp:TextBox><br /><br />
             Id Albumu:                      <asp:TextBox ID="Id_albumu" runat="server"></asp:TextBox><br />
-            <asp:Button ID="Button1" runat="server" Text="Powrot" OnClick="Button1_Click1" />
-&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Dodaj do bazy" />
             <br />
+
+            <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Powrót" />
+&nbsp;&nbsp;
+            <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Dodaj do bazy" />
 
             </font></div>
     </form></center>
+    <p>
+&nbsp;</p>
 </body>
 </html>

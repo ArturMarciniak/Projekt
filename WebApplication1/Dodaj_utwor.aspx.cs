@@ -19,7 +19,9 @@ namespace WebApplication1
             Response.Redirect("~/Menu_form.aspx");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+     
+
+        protected void Button6_Click(object sender, EventArgs e)
         {
             string tyt = Tytul.Text;
             string wyk = Wykonawca.Text;
@@ -31,13 +33,16 @@ namespace WebApplication1
             Polaczenie.WCFServiceClient klient = new Polaczenie.WCFServiceClient();
             klient.Open();
             klient.dodajUtwor(tyt, wyk, dlu, rok, alb);
-           
+
             Response.Write("<script LANGUAGE='JavaScript' >alert('Utwor dodany pomyślnie')</script>");
 
             Response.Redirect("~/Dodaj_utwor.aspx");
             klient.Close();
         }
 
-        
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Utwor_form.aspx");
+        }
     }
 }

@@ -32,9 +32,9 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbad_s426187ConnectionString %>" SelectCommand="SELECT * FROM [PprUtwor]"></asp:SqlDataSource>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Powrot do menu" />
 <br /><br />
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Dodaj Utwor" />
-            &nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Usun Utwor" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Dodaj utwór" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click1" Text="Usuń utwór" />
             <br />
         </div></center>
     </form>

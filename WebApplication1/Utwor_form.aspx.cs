@@ -28,5 +28,15 @@ namespace WebApplication1
         {
             Response.Redirect("~/Usun_utwor.aspx");
         }
+
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Dodaj_utwor.aspx");
+        }
+
+        protected void Button3_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Usun_utwor.aspx");
+        }
     }
 }
