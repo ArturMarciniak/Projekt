@@ -20,7 +20,7 @@
             Długość:                        <asp:TextBox ID="Dlugosc" runat="server"></asp:TextBox><br /><br />
             Rok wydania:                    <asp:TextBox ID="Rok" runat="server"></asp:TextBox><br /><br />
             Id Albumu:                      <asp:TextBox ID="Id_albumu" runat="server"></asp:TextBox><br />
-            <asp:Button ID="Button1" runat="server" Text="Powrot" />
+            <asp:Button ID="Button1" runat="server" Text="Powrot" OnClick="Button1_Click1" />
 &nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Dodaj do bazy" />
             <br />

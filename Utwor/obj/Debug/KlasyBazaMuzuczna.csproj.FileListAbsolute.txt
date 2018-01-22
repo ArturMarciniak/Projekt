@@ -4,3 +4,15 @@ j:\Desktop\Projekt\Utwor\bin\Debug\Utwor.dll
 j:\Desktop\Projekt\Utwor\bin\Debug\Utwor.pdb
 j:\Desktop\Projekt\Utwor\obj\Debug\Utwor.dll
 j:\Desktop\Projekt\Utwor\obj\Debug\Utwor.pdb
+C:\Users\Admin\Desktop\Projekt123\Utwor\bin\Debug\Utwor.dll
+C:\Users\Admin\Desktop\Projekt123\Utwor\bin\Debug\Utwor.pdb
+C:\Users\Admin\Desktop\Projekt123\Utwor\obj\Debug\KlasyBazaMuzuczna.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Projekt123\Utwor\obj\Debug\KlasyBazaMuzuczna.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Projekt123\Utwor\obj\Debug\Utwor.dll
+C:\Users\Admin\Desktop\Projekt123\Utwor\obj\Debug\Utwor.pdb
+j:\Desktop\Projekt123\Projekt123\Utwor\bin\Debug\Utwor.dll
+j:\Desktop\Projekt123\Projekt123\Utwor\bin\Debug\Utwor.pdb
+j:\Desktop\Projekt123\Projekt123\Utwor\obj\Debug\KlasyBazaMuzuczna.csprojResolveAssemblyReference.cache
+j:\Desktop\Projekt123\Projekt123\Utwor\obj\Debug\KlasyBazaMuzuczna.csproj.CoreCompileInputs.cache
+j:\Desktop\Projekt123\Projekt123\Utwor\obj\Debug\Utwor.dll
+j:\Desktop\Projekt123\Projekt123\Utwor\obj\Debug\Utwor.pdb

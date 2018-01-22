@@ -192,12 +192,26 @@
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Dodaj_album.aspx.cs">
+      <DependentUpon>Dodaj_album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dodaj_album.aspx.designer.cs">
+      <DependentUpon>Dodaj_album.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dodaj_utwor.aspx.cs">
       <DependentUpon>Dodaj_utwor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dodaj_utwor.aspx.designer.cs">
       <DependentUpon>Dodaj_utwor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj_wydawnictwo.aspx.cs">
+      <DependentUpon>Dodaj_wydawnictwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dodaj_wydawnictwo.aspx.designer.cs">
+      <DependentUpon>Dodaj_wydawnictwo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,12 +224,26 @@
       <DependentUpon>Menu_form.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usun_album.aspx.cs">
+      <DependentUpon>Usun_album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usun_album.aspx.designer.cs">
+      <DependentUpon>Usun_album.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Usun_utwor.aspx.cs">
       <DependentUpon>Usun_utwor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Usun_utwor.aspx.designer.cs">
       <DependentUpon>Usun_utwor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usun_wydawnictwo.aspx.cs">
+      <DependentUpon>Usun_wydawnictwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usun_wydawnictwo.aspx.designer.cs">
+      <DependentUpon>Usun_wydawnictwo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utwor_form.aspx.cs">
       <DependentUpon>Utwor_form.aspx</DependentUpon>
@@ -244,7 +272,9 @@
     </None>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Dodaj_album.aspx" />
     <Content Include="Dodaj_utwor.aspx" />
+    <Content Include="Dodaj_wydawnictwo.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -273,7 +303,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Usun_album.aspx" />
     <Content Include="Usun_utwor.aspx" />
+    <Content Include="Usun_wydawnictwo.aspx" />
     <Content Include="Utwor_form.aspx" />
     <Content Include="Wydawnictwo_form.aspx" />
     <None Include="Connected Services\Polaczenie\WCFService.wsdl" />

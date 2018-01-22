@@ -93,8 +93,8 @@ namespace Utwor
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO [PprAlbum] (id, nazwa, wydawnictwo) VALUES "
-                + "(@id, @nazwa, @wydawnicwo)", baza.GetConnection());
+            SqlCommand cmd = new SqlCommand("INSERT INTO [PprAlbum] (id, nazwa, dlugosc, wydawnictwo) VALUES "
+                + "(@id, @nazwa, @dlugosc, @wydawnicwo)", baza.GetConnection());
             cmd.Parameters.Add("@id", album.getId_albumu());
             cmd.Parameters.Add("@nazwa", album.getNazwa());
             cmd.Parameters.Add("@dlugosc", album.getDlugosc());
@@ -152,7 +152,7 @@ namespace Utwor
             Operacje_na_bazie baza = new Operacje_na_bazie();
             baza.ConnectToSQL();
 
-            SqlCommand cmd = new SqlCommand("DELETE FROM [PprWydawicwo] WHERE id = " + id, baza.GetConnection());
+            SqlCommand cmd = new SqlCommand("DELETE FROM [PprWydawnictwo] WHERE id = " + id, baza.GetConnection());
 
             cmd.ExecuteNonQuery();
             baza.CloseConnection();

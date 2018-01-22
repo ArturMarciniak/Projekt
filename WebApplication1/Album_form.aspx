@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Menu_form.aspx.cs" Inherits="WebApplication1.Album_form" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Album_form.aspx.cs" Inherits="WebApplication1.Album_form" %>
 
 <!DOCTYPE html>
 
@@ -33,8 +33,8 @@
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Powrót do menu" />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbad_s426187ConnectionString %>" SelectCommand="SELECT * FROM [PprAlbum]"></asp:SqlDataSource>
         <br /><br />
-        <asp:Button ID="Button3" runat="server" Text="Dodaj Utwor" />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Usun Utwor" />
+        <asp:Button ID="Button3" runat="server" Text="Dodaj Album" OnClick="Button3_Click" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Usun Album" />
     </form>
     </center>
     </body>

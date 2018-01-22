@@ -12,13 +12,9 @@ namespace Utwor
         private string nazwa_albumu;
         private double dlugosc_albumu;
         private int wydawnictwo;
-        private Utworek[] tablicaUtworow;
-        private int iterator;
 
         public Album(int id_albumu, string nazwa_albumu, double dlugosc_albumu, int wydawnictwo)
         {
-            dlugosc_albumu = 0;
-            iterator = 0;
             this.id_albumu = id_albumu;
             this.nazwa_albumu = nazwa_albumu;
             this.dlugosc_albumu = dlugosc_albumu;
@@ -66,19 +62,7 @@ namespace Utwor
             return dlugosc_albumu;
         }
 
-        //==============================
-
-        public void addUtworek(Utworek temp)
-        {
-            tablicaUtworow[iterator++] = temp;
-            dlugosc_albumu = dlugosc_albumu + temp.getDlugosc();
-
-        }
-
-        public Utworek getUtworek(int iterator)
-        {
-            return tablicaUtworow[iterator];
-        }
+      
 
     }
 }

@@ -13,5 +13,20 @@ namespace WebApplication1
         {
 
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+             Response.Redirect("~/Dodaj_album.aspx");
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Usun_album.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Menu_form.aspx");
+        }
     }
 }
