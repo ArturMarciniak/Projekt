@@ -141,7 +141,6 @@ j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\ApplicationInsights.
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\System.Collections.Immutable.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\TestyJednostkowe.dll.config
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\TestyJednostkowe.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\TestyJednostkowe.pdb
@@ -200,6 +199,7 @@ j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\Microsoft.Dia
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\Microsoft.Win32.Primitives.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\System.AppContext.dll
+j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\System.Collections.Immutable.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\System.Console.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\System.Diagnostics.FileVersionInfo.dll
 j:\Desktop\Projekt123\Projekt123\TestyJednostkowe\bin\Debug\roslyn\System.Diagnostics.Process.dll
